@@ -22,7 +22,7 @@ public class App
 	 	WebDriver driver = new ChromeDriver(options);
 	 	
 	 	//open the web application
-        driver.get("http://18.222.0.17:8081/contact.html");
+        driver.get("http://18.224.180.94:8081/contact.html");
         
         
         String title = driver.getTitle();
@@ -30,7 +30,7 @@ public class App
         
         //1. Locate and Enter Name
         WebElement name = driver.findElement(By.id("inputName"));
-        name.sendKeys("Shubham");
+        name.sendKeys("SUkanta");
         
         String printName = driver.findElement(By.id("inputName")).getText();
         
@@ -38,17 +38,17 @@ public class App
         
         //2. Locate and Enter Contact
         WebElement number = driver.findElement(By.id("inputNumber"));
-        number.sendKeys("999999999");
+        number.sendKeys("11111111");
         System.out.println(number.getText().toString());
         
         //3. Locate Email and Enter Email
         WebElement mail = driver.findElement(By.id("inputMail"));
-        mail.sendKeys("shubham@xyz.com");
+        mail.sendKeys("sukanta@gmail.com");
         System.out.println(mail.getText());
         
         //4. Locate Message and Enter Message
         WebElement message = driver.findElement(By.id("inputMessage"));
-        message.sendKeys("Hello, How are you ?");
+        message.sendKeys("Need Doctor Appointment ?");
         System.out.println(message.getText());
         
         Thread.sleep(2000);
